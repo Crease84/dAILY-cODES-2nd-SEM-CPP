@@ -17,20 +17,26 @@ int main() {
 		DOGs.push_back(rand()%50);
 		
 	for (int j = 0; j < 20; j++)
-		cout << DOGs[j] << endl;
+		cout << DOGs[j] << " ";
+
+	cout << endl;
+	cout << endl;
 
 	cout << "SORT" << endl << endl;
 
 	sort(DOGs.begin(), DOGs.end());
 
 	for (int j = 0; j < 20; j++)
-		cout << DOGs[j] << endl <<endl;
+		cout << DOGs[j] << " ";
+
+	cout << endl;
+	cout << endl;
 
 	cout << "SHUFFLE" << endl << endl;
 
 	random_shuffle(DOGs.begin(), DOGs.end());
 
 	for (int j = 0; j < 20; j++)
-		cout << DOGs[j] << endl;
+		cout << DOGs[j] << " ";
 
 }
