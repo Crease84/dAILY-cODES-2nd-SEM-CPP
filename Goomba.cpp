@@ -21,13 +21,18 @@ int main() {
 	//g1.setPostion(300, 200);
 	
 	Goomba Bob(300, 200); //instantiate with constructor
-
+	Goomba Derek(10, 200);
+	Goomba Mo(790, 200);
  //LOOP------------
 	while (1) {//game loop
 		//physics engine!
-		Bob.walk();
+		Bob.walk(); 
+		Derek.walk();
+		Mo.walk();
 		//"render" section
 		Bob.print();
+		Derek.print();
+		Mo.print();
 		//"render" section
 		system("timeout /t 2 >nul");
 		system("CLS");
@@ -64,5 +69,5 @@ void Goomba::print(){
 	else {
 		cout << char(62);
 	}
-
+	cout << endl;
 }
